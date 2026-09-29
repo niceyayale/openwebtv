@@ -1,0 +1,18 @@
+{
+  "sites": [
+    {
+      "key": "hhzy",
+      "name": "HHZY 4K",
+      "api": "https://hhzyapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1
+    },
+    {
+      "key": "1080zyk",
+      "name": "1080ZYKU",
+      "api": "https://api.1080zyku.com/inc/api_mac10.php",
+      "type": 1,
+      "searchable": 1
+    }
+  ]
+}
