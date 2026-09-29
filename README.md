@@ -1,6 +1,6 @@
 # OpenWebTV — Content Source Repository
 
-> **[中文](README.zh.md)** | English
+>   English |**[中文](README.zh.md)**
 
 > This repository collects TVBox-format JSON config files for [OpenWebTV](https://openwebtv.com), an online video player platform.
 
