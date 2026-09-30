@@ -1,0 +1,28 @@
+{
+  "name": "OpenWebTV Config Sources",
+  "description": "Tested and verified TVBox config URLs that work with OpenWebTV",
+  "updatedAt": "2026-09-30",
+  "sources": [
+    {
+      "name": "楗お纭鑸?,
+      "url": "http://www.楗お纭?cc/tv/",
+      "format": "HTML鈫抋uto-follow",
+      "sites": 47,
+      "notes": "HTML瀵艰埅椤碉紝鑷姩鎻愬彇閰嶇疆閾炬帴骞惰窡闅?
+    },
+    {
+      "name": "楗お纭?gitlink (JPEG闅愬啓)",
+      "url": "https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp",
+      "format": "JPEG steganography",
+      "sites": 47,
+      "notes": "JPEG闅愬啓閰嶇疆锛岀洿鎺ュ彲鐢?
+    },
+    {
+      "name": "yoursmile66 (AES-CBC鍔犲瘑)",
+      "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
+      "format": "AES-CBC encrypted",
+      "sites": 84,
+      "notes": "AES-CBC鍔犲瘑閰嶇疆锛岃嚜鍔ㄨВ瀵?
+    }
+  ]
+}
