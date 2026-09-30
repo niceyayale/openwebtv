@@ -86,6 +86,30 @@ https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json
 
 在 URL 输入框中直接粘贴 CMS API 地址，播放器会自动识别 CMS API 响应并包装为单个源。
 
+## 配置源
+
+已测试验证可用的 TVBox 配置 URL，粘贴到「添加内容源」对话框即可导入。
+
+**配置文件**: [`configs/config-sources.json`](configs/config-sources.json)
+
+| 源 | URL | 格式 | 站点数 | 说明 |
+|----|-----|------|--------|------|
+| 饭太硬导航 | `http://www.饭太硬.cc/tv/` | HTML→自动跟随 | 47 | HTML 页面含多个配置链接，自动提取并跟随到可用配置 |
+| 饭太硬/gitlink | `https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp` | JPEG 隐写 | 47 | 直接配置 URL（嵌入在 JPEG 中） |
+| yoursmile66 | `https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json` | AES-CBC 加密 | 84 | 加密配置（自动解密） |
+
+### 支持的配置格式
+
+OpenWebTV 完全兼容 TVBox 配置格式：
+
+- **明文 JSON** — 直接解析
+- **带注释 JSON** — 去除 `//` 和 `/* */`
+- **Base64 标记** — `[A-Za-z0-9]{8}**` 前缀 → base64 解码
+- **JPEG 隐写** — 配置嵌入在 JPEG FFD9 标记之后
+- **AES-CBC 加密** — hex 内容以 `2423` 开头（自动解密）
+- **AES-ECB 加密** — URL 含 `;pk;password` 密钥（自动解密）
+- **HTML 导航页** — 自动提取 `data-clipboard-text` URL 并跟随
+
 ## 免责声明
 
 - 本仓库仅收集和整理互联网上公开可用的 TVBox 配置文件

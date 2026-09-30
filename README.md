@@ -90,20 +90,13 @@ Paste a CMS API endpoint directly in the URL input box. The player auto-detects 
 
 Tested and verified config URLs that work with OpenWebTV. Paste any of these into the "Add Content Source" dialog.
 
+**Config file**: [`configs/config-sources.json`](configs/config-sources.json)
+
 | Source | URL | Format | Sites | Notes |
 |--------|-----|--------|-------|-------|
 | 饭太硬导航 | `http://www.饭太硬.cc/tv/` | HTML→auto-follow | 47 | HTML page with multiple config links; auto-extracts and follows to working config |
 | 饭太硬/gitlink | `https://cdn09022024.gitlink.org.cn/api/v1/repos/xxooo/in/raw/in.bmp` | JPEG steganography | 47 | Direct config URL (embedded in JPEG) |
 | yoursmile66 | `https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json` | AES-CBC encrypted | 84 | Encrypted config (auto-decrypted) |
-
-### Unsupported URLs (as of 2026-09-30)
-
-| URL | Reason |
-|-----|--------|
-| `http://fty.xxooo.cf/tv` | DNS 1016 — domain doesn't resolve |
-| `http://tvbox.xn--4kq62z5rby2qupq9ub.top/` | Returns "你好！" — not a config |
-| `http://cdn.qiaoji8.com/tvbox.json` | DNS 1016 — domain doesn't resolve |
-| `https://gh-proxy.net/.../XC.json` | Returns HTML anti-bot page — use direct GitHub raw URL instead |
 
 ### Supported Config Formats
 
