@@ -1,10 +1,10 @@
 {
-  "_comment": "OpenWebTV Live Sources — 10 sources (8 primary + 2 optional), all probe-tested 2026-10-02",
+  "_comment": "OpenWebTV Live Sources — 10 sources (8 primary + 2 optional). NASA TV + Mux Test Stream URLs replaced 2026-10-02 (originals returned 404).",
   "_meta": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "updatedAt": "2026-10-02",
-    "description": "8 primary live sources (≥30% playable) + 2 optional (20% playable)",
-    "probeMethod": "HEAD sampling + CORS check + HTTPS ratio"
+    "description": "8 primary live sources (≥30% playable) + 2 optional (20% playable). NASA TV replaced with iReplay 24/7 Blender live; Mux Test replaced with Mux dev Big Buck Bunny VOD.",
+    "probeMethod": "HEAD sampling + CORS check + sub-playlist verification + HTTPS ratio"
   },
   "lives": [
     {
@@ -61,21 +61,21 @@
       "key": "live_nasa",
       "name": "NASA TV",
       "type": 0,
-      "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
+      "url": "https://ireplay.tv/test/blender.m3u8",
       "playerType": 1,
       "searchable": 0,
-      "timeout": 10000,
-      "_note": "Single HLS stream, public domain 24/7, A-grade"
+      "timeout": 15000,
+      "_note": "24/7 Blender open-movies live stream (iReplay.tv, 1080p fMP4). Original NASA Akamai stream sub-playlists (master_500/700/2000.m3u8) returned 404 as of 2026-10-02; replaced with working 24/7 live HLS, CORS=*, A-grade"
     },
     {
       "key": "live_mux_test",
       "name": "Mux Test Stream",
       "type": 0,
-      "url": "https://stream.mux.com/v69RSHh7D2gjn2oBlN3zlg00WQO7TJGVDV6gZ3FJyVg.m3u8",
+      "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
       "playerType": 1,
       "searchable": 0,
-      "timeout": 10000,
-      "_note": "Single HLS stream, dev/validation, A-grade"
+      "timeout": 15000,
+      "_note": "Mux dev Big Buck Bunny VOD test stream (multi-rendition ABR ladder). Original stream.mux.com URL returned 404 as of 2026-10-02; replaced with official Mux dev test stream, CORS=*, A-grade"
     },
     {
       "key": "live_unified_streaming",
