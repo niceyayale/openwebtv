@@ -7,7 +7,6 @@ const PROXY_URL = 'https://api.openwebtv.com/config?url=';
 const REPO_CONFIG_FILES = [
   `${GITHUB_RAW}/configs/curated.json`,
   `${GITHUB_RAW}/configs/quick-cms-sources.json`,
-  `${GITHUB_RAW}/configs/live-sources.json`,
 ];
 
 // Metadata file listing external TVBox config URLs
