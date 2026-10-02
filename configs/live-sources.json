@@ -1,0 +1,111 @@
+{
+  "_comment": "OpenWebTV Live Sources — 10 sources (8 primary + 2 optional), all probe-tested 2026-10-02",
+  "_meta": {
+    "version": "1.0.0",
+    "updatedAt": "2026-10-02",
+    "description": "8 primary live sources (≥30% playable) + 2 optional (20% playable)",
+    "probeMethod": "HEAD sampling + CORS check + HTTPS ratio"
+  },
+  "lives": [
+    {
+      "key": "live_iptvorg_news",
+      "name": "IPTV-Org News",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "1036 channels, 70% playable, A-grade HTTPS+CORS"
+    },
+    {
+      "key": "live_freetv_iptv",
+      "name": "Free-TV IPTV",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/Free-TV/IPTV@master/playlist.m3u8",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "2080 channels, 60% playable, A-grade via jsDelivr CDN"
+    },
+    {
+      "key": "live_iptvorg_us",
+      "name": "IPTV-Org US",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/countries/us.m3u",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "985 channels, 50% playable, A-grade HTTPS+CORS"
+    },
+    {
+      "key": "live_akiralereal",
+      "name": "Akiralereal IPTV",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/akiralereal/iptv/main/playlist.m3u",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "34 channels, 50% playable, A-grade via GitHub raw"
+    },
+    {
+      "key": "live_m3upt",
+      "name": "M3UPT Portugal",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/LITUATUI/M3UPT@main/playlist",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "954 channels, 30% playable, A-grade via jsDelivr CDN"
+    },
+    {
+      "key": "live_nasa",
+      "name": "NASA TV",
+      "type": 0,
+      "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 10000,
+      "_note": "Single HLS stream, public domain 24/7, A-grade"
+    },
+    {
+      "key": "live_mux_test",
+      "name": "Mux Test Stream",
+      "type": 0,
+      "url": "https://stream.mux.com/v69RSHh7D2gjn2oBlN3zlg00WQO7TJGVDV6gZ3FJyVg.m3u8",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 10000,
+      "_note": "Single HLS stream, dev/validation, A-grade"
+    },
+    {
+      "key": "live_unified_streaming",
+      "name": "Unified Streaming Demo",
+      "type": 0,
+      "url": "https://demo.unified-streaming.com/k8s/live/stable/scte35.isml/.m3u8",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 10000,
+      "_note": "Single HLS stream, demo, A-grade"
+    },
+    {
+      "key": "live_iptvorg_cn",
+      "name": "IPTV-Org China (Optional)",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "145 channels, 20% playable, optional — lower playability"
+    },
+    {
+      "key": "live_iptv_italia",
+      "name": "IPTV-Italia (Optional)",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/playlist",
+      "playerType": 1,
+      "searchable": 0,
+      "timeout": 15000,
+      "_note": "71 channels, 20% playable, optional — lower playability"
+    }
+  ]
+}

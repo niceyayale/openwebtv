@@ -1,8 +1,14 @@
 {
   "name": "OpenWebTV Config Sources",
   "description": "Tested and verified TVBox config URLs that work with OpenWebTV",
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-02",
   "sources": [
+    {
+      "name": "Live TV Sources (10 sources)",
+      "url": "https://raw.githubusercontent.com/niceyayale/openwebtv/main/configs/live-sources.json",
+      "description": "8 primary + 2 optional live TV M3U sources, all probe-tested",
+      "type": "live"
+    },
     {
       "name": "饭太硬导航",
       "url": "http://www.饭太硬.cc/tv/",
